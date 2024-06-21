@@ -2,6 +2,7 @@
 
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -19,7 +20,7 @@ ul {
   text-align: center;
   position: fixed;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.87);
 }
 
 li {
@@ -27,19 +28,26 @@ li {
   list-style: none;
   font-family: 'Quicksand', sans-serif; 
   vertical-align: middle;
-  transition: background-color 1s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 1s ease-in-out;
 }
 
 li:first-of-type {
   padding: 0 2rem;
 }
 
-li:not(:first-of-type) {
-  padding: 1rem 2rem;
-}
-
 li:hover:not(:first-of-type) {
   background-color: rgb(10, 0, 95);
+}
+
+li a {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: black;
+  transition: color 0.25s ease-in-out;
+}
+
+li a:hover {
   color: white;
 }
 
@@ -55,14 +63,14 @@ video {
 
 #inicio {
   padding: 10rem 0;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 #texto-inicio {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   padding: 5rem 20%;
-  background-color: rgba(255, 255, 255, 0.75)
+  background-color: rgba(255, 255, 255, 0.60)
 }
 
 @media (max-width: 375px) {
@@ -84,7 +92,81 @@ video {
   margin-bottom: 1rem;
 }
 
-#persona3 {
-  height: 300px;
+#links-inicio {
+  padding: 0 5% 5rem;
+  background-color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+}
+
+.link-inicio {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.link-inicio img {
+  width: 20rem;
+}
+
+.link-inicio a {
+  display: block;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 140, 255);
+  transition: background-color 1s ease-in-out;
+}
+
+.link-inicio a:hover {
   background-color: rgb(10, 0, 95);
+}
+
+#persona3 {
+  padding: 4rem 0;
+  background-color: rgb(10, 0, 95);
+}
+
+.conteudo-jogo {
+  max-width: 80rem;
+  min-width: 80%;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.conteudo-jogo img {
+  display: inline-block;
+  width: 20rem;
+  vertical-align: middle;
+}
+
+.video-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+	height: 20rem;
+  width: 40rem;
+  max-width: 100%;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.texto-jogo {
+  font-family: 'Quicksand', sans-serif;
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.texto-jogo p {
+  margin: 1rem 0;
 }
