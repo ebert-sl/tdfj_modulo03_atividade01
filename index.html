@@ -10,12 +10,12 @@
   <header>
     <nav>
       <ul>
-        <li><img src="./assets/images/persona_psp_logo.svg" alt="Persona Logo" id="header-logo"></li>
+        <img src="./assets/images/persona_psp_logo.svg" alt="Persona Logo" id="header-logo">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#persona3">Persona 3</a></li>
-        <li><a>Persona 4</a></li>
-        <li><a>Persona 5</a></li>
-        <li><a>Contato</a></li>
+        <li><a href="#persona4">Persona 4</a></li>
+        <li><a href="#persona5">Persona 5</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -42,11 +42,11 @@
         </div>
         <div class="link-inicio">
           <img src="./assets/images/persona4_golden_logo.webp" alt="Persona 4 Golden">
-          <a>Saiba Mais</a>
+          <a href="#persona4">Saiba Mais</a>
         </div>
         <div class="link-inicio">
           <img src="./assets/images/persona5_royal_logo.webp" alt="Persona 5 Royal">
-          <a>Saiba Mais</a>
+          <a href="#persona5">Saiba Mais</a>
         </div>
       </div>
     </section>
@@ -73,14 +73,72 @@
       </div>
     </section>
     <section id="persona4">
-      
+      <div class="conteudo-jogo">
+        <img src="./assets/images/persona4_golden_logo.webp" alt="Persona 4 Golden">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/g_tT2Zshf3A" title="Persona 4 Golden - Official Launch Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="texto-jogo">
+          <p>       
+            Persona 4 Golden, abreviado como P4G, e também intitulado Persona 4: The Golden no Japão, 
+            é uma reedição aprimorada de Persona 4, que foi lançada inicialmente para o PlayStation Vita.
+          </p>
+          <p>
+            O protagonista é um estudante do ensino médio que se mudou da cidade para o campo por um ano. 
+            Durante sua estadia de um ano, ele se envolve na investigação de assassinatos misteriosos com 
+            um grupo de amigos enquanto utiliza o poder de invocar manifestações físicas de suas psiques 
+            conhecidas como Persona.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="persona5">
-      
+      <div class="conteudo-jogo">
+        <img src="./assets/images/persona5_royal_logo.webp" alt="Persona 5 Royal">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/SKpSpvFCZRw" title="Persona 5 Royal - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="texto-jogo">
+          <p>           
+            Persona 5 Royal, abreviado como P5R e intitulado Persona 5: 
+            The Royal no Japão, é uma reedição aprimorada de Persona 5.
+          </p>
+          <p>
+            Persona 5 acontece na Tóquio de hoje e segue um estudante do ensino médio, 
+            com o codinome Joker (Coringa), após sua transferência para a Academia Shujin após ser colocado 
+            em liberdade condicional por ter sido falsamente acusado de agressão contra um político 
+            influente e corrupto. Ao longo de um ano letivo, ele e outros estudantes despertam seus poderes 
+            de invocação de Personas, tornando-se um grupo de justiceiros secretos conhecidos como os 
+            Phantom Thieves of Hearts.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="contato">
-      
+      <form id="form">
+        <p>Envie sua dúvida sobre o jogo:</p>
+        <br><br>
+        <div class="form-row">
+          <label for="name">Nome: </label>
+          <br>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail: </label>
+          <br>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-row">
+          <label for="mensagem">Mensagem: </label>
+          <br>
+          <textarea id="mensagem" name="mensagem"></textarea>
+        </div>
+        <div class="form-row">
+          <input type="submit" id="enviar" value="Enviar">
+        </div>
+      </form>
     </section>
   </main>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
